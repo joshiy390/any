@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}{{username}}{% endblock %}
+
+{% block content %}
+
+    <div class="geninf">
+        <div class="genhead">
+            <h1>General Information</h1>
+        </div>
+        <ul style="list-style-type:none;margin:0;padding:0;">
+            <li>Posts</li>
+            <li>{{posts}}</li>
+            <li>Followers</li>
+            <li>{{followers}}</li>
+            <li>Following</li>
+            <li>{{following}}</li>
+        </ul>
+        <a href="/create">
+            <button class="createbtn">Create Post</button>
+        </a>
+        <a href="/settings">
+            <p class="settingsbtn"><strong>Settings</strong></p>
+        </a>
+    </div>
+
+{% endblock %}
